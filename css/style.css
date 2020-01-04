@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0
+}
+
+.container{
+    background: #333;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh
+}
+
+.container .wish-list{
+    background: linear-gradient(120deg, #df3636 30%, #2b0909);
+    padding: 20px;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+.container .wish-list header{
+    padding: 10px;
+    border :1px solid #333;
+    background: rgba(0, 0, 0, .6);
+    color :#FFF;
+    border-radius: 10px;
+    margin: 20px auto
+}
+
+.container .wish-list input[type='text'] {
+    width: 80%;
+    height: 35px;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    margin: 20px auto 10px;
+}
+
+.container .wish-list input[type='text']::placeholder{
+    color: rgb(29, 29, 29)
+}
+
+.container .wish-list input[type='text'].search{
+    width: calc(80% - 30px);
+}
+
+.container h2{
+    color:#333;
+    text-align: center;
+    margin-bottom: 10px
+}
+
+hr{
+    background: rgba(0, 0, 0, .6);
+    height: 2px;
+    width: 70%;
+    margin: 5px auto 20px;
+    border: none
+}
+
+.container ul{
+    background: #FFF;
+    list-style: none;
+    text-align: left;
+    padding: 10px 20px
+}
+
+.container ul li{
+    padding: 10px;
+    border: 1px solid #333;
+    margin: 5px auto;
+    position: relative;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+}
+
+.container ul li:hover{
+    background: rgba(0, 0, 0, .6);
+    color: #FFF
+}
+
+.container ul li i{
+    position: absolute;
+    right: 10px;
+    color: #333;
+    transition: all .1s ease-in-out
+}
+
+.container ul li i:hover{
+    color: #FFF
+}
+
+.container ul li:hover{
+    color: #FFF
+}
+
+.container i.find-wish,
+.container i.add-wish{
+    width: 20%;
+    height: 35px;
+    background: #FFF;
+    line-height: 35px;
+    color: #333;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .1s ease-in-out
+}
+
+.container i.find-wish{
+    background: rgba(0, 0, 0, .6);
+    color: #FFF
+}
+
+.container i.find-wish:hover,
+.container i.add-wish:hover{
+    background: rgba(0, 0, 0, .6);
+    color: #FFF
+}
